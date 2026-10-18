@@ -1,0 +1,32 @@
+{
+  "name": "restful-booker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env SEED=true node ./bin/www",
+    "test": "mocha -R spec tests/spec.js",
+    "build_docs": "apidoc -i ./routes/ -o public/apidoc/"
+  },
+  "dependencies": {
+    "body-parser": "2.2.2",
+    "cookie-parser": "1.4.7",
+    "cross-env": "10.1.0",
+    "date-and-time": "4.3.1",
+    "debug": "4.4.3",
+    "express": "5.2.1",
+    "express-xml-bodyparser": "0.4.1",
+    "form-urlencoded": "6.1.6",
+    "js2xmlparser": "5.0.0",
+    "lokijs": "^1.5.12",
+    "morgan": "1.10.1",
+    "pug": "3.0.4",
+    "uuid": "13.0.0",
+    "validate.js": "0.13.1",
+    "xml2js": "0.6.2"
+  },
+  "devDependencies": {
+    "chai": "6.2.2",
+    "mocha": "11.7.5",
+    "supertest": "7.2.2"
+  }
+}
